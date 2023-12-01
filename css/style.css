@@ -31,7 +31,7 @@ header {
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -494,16 +494,18 @@ form textarea {
 
 .contact-form .submit {
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     background: var(--main-color);
     color: var(--text-color);
-    width: 160px;
+    width: 140px;
     transition: all .45s ease;
 }
 
 .contact-form .submit:hover {
     transform: scale(1.1);
     cursor: pointer;
+    
+    
 }
 
 .end {
@@ -579,6 +581,173 @@ form textarea {
         display: block;
         
     }
+    header {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--bg-color);
+        padding: 22px 5%;
+        border-bottom: 1px solid transparent;
+        transition: all .45s ease;
+    
+    }
+    .about-img img{
+        border-radius: 50% !important;
+        height: auto !important;
+        width: 250px !important;
+    }
+    .home-text p{
+        font-size: 0.8rem;
+    }
+    .home {
+        position: relative;
+        height: auto;
+        width: 100%;
+        background-image: url();
+        background-color: var(--second-bg-color);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .homebtn{
+        width: 100%;
+        
+    }
+    .homebtn a{
+        font-size: 12px !important;
+    }
+    .button{
+        height: 20px;
+        width: 50%;
+        margin: 10px 2px;
+        
+    }
+    .button_cv{
+        height: 0px;
+        width: 70%;
+        margin: 10px 0px; 
+    }
+    
+    .home .home-text h3{
+        font-size: 1.8rem;
+        font-weight: 600px;
+    }
+    .home .home-text h2{
+        font-size: 1.5rem;
+        font-weight: 600px;
+    }
+    .logo {
+        color: var(--text-color);
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        
+    }
+    .about-img img {
+        max-width: 400px;
+        height: auto;
+        width: 100%;
+        border-radius: 50%;
+        margin-top: 22px;
+    
+    }
+    .about{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .img2 img{
+        display: none !important;
+    }
+
+    .about-text h2{
+        font-size: 1.5rem;
+        margin-top: -50px;
+    }
+    .about-text h4{
+        font-size: 1.2rem;
+        
+    }
+    .main-text h2{
+        font-size: 1.7rem;
+        
+    }
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+        align-items: center;
+        gap: 2.2rem;
+        margin-top: 3rem;
+    }
+    .portfolio-content .layer p{
+        font-size: 12px;
+    }
+    .skill .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .skill .skillleft{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin: auto;
+    }
+    .skill .skillright{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .skill h5{
+        font-size: 16px;
+    }
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-text h2{
+        font-size: 1.7rem;
+        margin: 10px;
+        margin-top: -50px;
+       
+    }
+    .contact-text h4{
+        font-size: 1.1rem;
+        margin: 10px;
+        margin-top: 20px;
+      
+    }
+    .contact-text p{
+        font-size: 12px;
+        margin: 10px;
+        
+    }
+    .contact-text .list{
+        font-size: 15px;
+        margin: 10px;
+        
+    }
+    .contact-icons .list{
+        font-size: 15px;
+        margin: 10px;
+        
+    }
+    
     .navlist{
         position: absolute;
         top: 60px;
@@ -594,7 +763,7 @@ form textarea {
     .navlist a{
         display: block;
         margin: 17px;
-        font-size: 20px;
+        font-size: 15px;
         transition: all .45s ease;
         color: var(--text-color);
 
@@ -607,6 +776,10 @@ form textarea {
     }
     .navlist.open{
         top: 100%;
+    }
+
+    .end .last-text p{
+        font-size: 0.7rem;
     }
 }
 
